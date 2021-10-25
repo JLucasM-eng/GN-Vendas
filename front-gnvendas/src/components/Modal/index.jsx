@@ -81,14 +81,15 @@ const Modal = ({onClose = ()=>{},data})=>{
                       type="text"
                       id="telefone"
                       name="telefone"
-                      placeholder={telefone.length>0 ? '' : 'Ex: 01531999999999'}
+                      minlength="10"
+                      placeholder={telefone.length>0 ? '' : 'Ex: 31999999999'}
                       value={telefone}
 
                       onChange={event => {
                         setTelefone(Number(event.target.value))
                       }}
                       required />
-                      <p>*Apenas números</p>
+                      <p>*Apenas números, DDD de 2 caracteres</p>
                   </div>
 
                   <div>

@@ -15,7 +15,6 @@ module.exports = {
         const response = {...defaultResponseModel}
 
         const {nome, cpf,telefone,item} = req.body;
-        console.log("AQUI ESTAO OS DADOS",nome, cpf,telefone,item)
         // const service = new GenerateBilletService();
 
         const result = await GenerateBilletService.execute(nome, cpf,telefone,item)

@@ -23,7 +23,7 @@ function FinishedBuy() {
       <><a href={dataBuyProduct?.pdf.charge} target="_blank">Gerar Boleto</a>
       <button onClick={()=>{history.push('/')}}>Voltar para Home</button></>
       :
-      <><div>{dataBuyProduct?.error_description}</div>
+      <><div>{dataBuyProduct?.code === 3500034 ?"Nome ou telefone inválido":dataBuyProduct?.error_description}</div>
       <button onClick={()=>{history.push('/products')}}>Tentar novamente</button></>
       }
       
