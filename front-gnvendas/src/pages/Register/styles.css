@@ -1,0 +1,54 @@
+
+
+#title {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0 1rem 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 0;
+}
+
+input, button {
+    border-radius: 5px;
+}
+
+label {
+    margin: 1rem 0 0.2em 0;
+    display: block;
+}
+
+input {
+    padding: 0.5rem;
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+#SuccessMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem;
+}
